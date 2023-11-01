@@ -39,7 +39,7 @@ const updateBoard = (index: number) => {
   
 
 <template>
-    <div class="bg-[#0D0F12] h-screen flex flex-col items-center justify-center gap-20 relative">
+    <div class="font-sans bg-[#0D0F12] h-screen flex flex-col items-center justify-center gap-20 relative">
         <h1 class="text-7xl font-extrabold text-[#E3E6E8]">Tic Tac Toe</h1>
         <div class="grid grid-cols-3">
             <Square v-for="(square, index) in board" :key="index" :index="index" :updateBoard="updateBoard">
